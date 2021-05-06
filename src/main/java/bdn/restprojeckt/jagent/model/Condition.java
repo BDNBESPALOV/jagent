@@ -1,4 +1,4 @@
-package bdn.rest_projeckt.jagent.model;
+package bdn.restprojeckt.jagent.model;
 
 
 import java.util.Date;

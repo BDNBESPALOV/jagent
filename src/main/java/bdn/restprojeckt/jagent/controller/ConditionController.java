@@ -1,6 +1,6 @@
-package bdn.rest_projeckt.jagent.controller;
+package bdn.restprojeckt.jagent.controller;
 
-import bdn.rest_projeckt.jagent.model.Condition;
+import bdn.restprojeckt.jagent.model.Condition;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

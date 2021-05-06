@@ -1,4 +1,4 @@
-package bdn.rest_projeckt.jagent;
+package bdn.restprojeckt.jagent;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
