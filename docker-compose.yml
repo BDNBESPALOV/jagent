@@ -17,7 +17,7 @@ services:
     image: bespalovdn/my_jagent:v1
     container_name: my_jagent_v1
     ports:
-      - 8081:8081
+      - 8083:8083
     volumes:
       - ../../SP:/u01/SP
     environment:
