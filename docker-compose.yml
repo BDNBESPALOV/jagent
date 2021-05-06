@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:11-alpine
+    container_name: postgres
+    ports:
+    - 5432:5432
+    volumes:
+    - ../../pg_data:/u01/pgdata
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: azk_db
+      PGDATE: /u01/pgdata
+     # POSTGRES_HOST_AUTH_METHOD:
+    restart: always
+  app_c:
+    image: bespalovdn/my_jagent:v1
+    container_name: my_jagent_v1
+    ports:
+      - 8081:8081
+    volumes:
+      - ../../SP:/u01/SP
+    environment:
+      POSTGRES_HOST: db
+    restart: always
+    links:
+      - db
